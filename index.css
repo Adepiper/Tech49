@@ -1,8 +1,20 @@
+body{
+    background-color: darkgray;
+    color: white;
+}
+
 .info{
     background-image: url(./assets/black-and-silver-solar-panels-159397.jpg);
     min-height: 700px;
 }
 
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
 .overlay{
     background-color: rgba(0,0,0,0.6);
     min-height: 700px;
@@ -12,4 +24,12 @@
 }
 .p-3{
     font-size: 16px;
+}
+#copyright{
+    font-size: larger !important;
+}
+
+nav{
+    border-bottom: #D80B0B 3px solid;
+    opacity: 0.8;
 }

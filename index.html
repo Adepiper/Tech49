@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/x-icon" href="P.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <title>Tech 49</title>
   </head>
@@ -21,23 +22,23 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
             <li class="navbar-item p-2">
-              <a href="" class="navbar-link"></a>
+              <a href="#info" class="navbar-link">Home</a>
             </li>
             <li class="navbar-item p-2">
-              <a href="" class="navbar-link"></a>
+              <a href="calculator.html" class="navbar-link">Calculate</a>
             </li>
             <li class="navbar-item p-2">
-              <a href="" class="navbar-link"></a>
+              <a href="#about" class="navbar-link">About us</a>
             </li>
             <li class="navbar-item p-2">
-              <a href="" class="navbar-link"></a>
+              <a href="" class="navbar-link" aria-disabled="true">Shop now</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <header class="info">
+    <header class="info" id="info">
       <div class="overlay">
         <div class="inner">
         <div class="container">
@@ -48,15 +49,24 @@
                 </h1>
                 <div class="d-flex flex-row">
                   <div class="p-3">
+                    <i class="fa fa-check-circle"></i>
+                        </div>
+                  <div class="p-3">
                       The use of solar energy offers huge potential for natural resource and climate protection, and for the expansion of renewable energies on the road to a future-oriented energy supply.
                   </div>
                 </div>
                 <div class="d-flex flex-row">
+                  <div class="p-3">
+                    <i class="fa fa-check-circle"></i>
+                  </div>
                     <div class="p-3">
                         The use of solar energy offers huge potential for natural resource and climate protection, and for the expansion of renewable energies on the road to a future-oriented energy supply.
                     </div>
                   </div>
                   <div class="d-flex flex-row">
+                  <div class="p-3">
+                    <i class="fa fa-check-circle"></i>
+                  </div>                    
                       <div class="p-3">
                           The use of solar energy offers huge potential for natural resource and climate protection, and for the expansion of renewable energies on the road to a future-oriented energy supply.
                       </div>
@@ -68,7 +78,95 @@
       </div>
     </header>
     
+    <section id="explore-products">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <div class="p-5">
+              <h1 class="display-4">
+                Explore
+              </h1>
+              <p class="lead">
+                We at tech49, have great solar products that would fit your solar needs
+              </p>
+              <button href="" class="btn btn-primary" disabled>Shop now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculate" class="bg-light text-muted">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <div class="p-5">
+              <h4 class="font-weight-light">
+                Having a way to calculate the amount of solar panels you need saves time
+              </h4>
+              <button class="btn btn-outline-primary">You wanna try?</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-primary py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>
+              About us 
+            </h3>
+            <div class="d-flex flex-row">
+              <div class="p-4">
+                   <i class="fa fa-check-circle"></i>
+              </div>
+              <div class="p-4">
+
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="p-4">
+                 <i class="fa fa-check-circle"></i>
+              </div>
+              <div class="p-4">
+                 
+              </div>
+              </div>
+              <div class="d-flex flex-row">
+              <div class="p-4">
+                 <i class="fa fa-check-circle"></i>
+              </div>
+              <div class="p-4">
+
+              </div>
+                </div>
+          </div>
+          <div class="col-md-6 d-none d-lg-block">
+            <img src="./assets/inverter.jpg" alt="" class="img-fluid mb-2 rounded-circle">
+          </div>
+
+        </div>
+      </div>
+    </section>
     
+    <footer id="footer-section" class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <div class="py-4">
+                <button class="btn btn-outline-primary mx-2"><i class="fab fa-twitter"></i></button>
+                <button class="btn btn-outline-primary mx-2"><i class="fab fa-facebook"></i></button>
+                <button class="btn btn-outline-primary mx-2"><i class="fab fa-instagram"></i></button>
+                <p id="copyright" class="my-3"> Tech49 &copy; 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
