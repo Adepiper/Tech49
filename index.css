@@ -1,11 +1,13 @@
 body{
     background-color: darkgray;
     color: white;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .info{
     background-image: url(./assets/black-and-silver-solar-panels-159397.jpg);
-    min-height: 700px;
+    min-height: 600px;
+    font-size: large;
 }
 
 .nav a{
@@ -17,7 +19,7 @@ body{
 }
 .overlay{
     background-color: rgba(0,0,0,0.6);
-    min-height: 700px;
+    min-height: 600px;
 }
 .inner{
     padding-top: 150px;
@@ -31,5 +33,41 @@ body{
 
 nav{
     border-bottom: #D80B0B 3px solid;
-    opacity: 0.8;
+    opacity: 0.9;
 }
+
+#about{
+    font-size: 18px;
+}
+#font1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 22px;
+}
+
+.info h1{
+    font-size: 80px;
+}
+
+.jumbotron{
+    background: transparent !important;
+}
+
+#icondiv i{
+   border-color: #008ed6;
+   font-size: 30px;
+}
+#icondiv {
+    border-color: 1px solid white !important;
+    background-color: #292b2c;
+    border-radius: 50%;
+}
+.modal-content{
+    background-color: rgba(0, 0,0,0.8) !important;
+}
+
+#modalContent{
+    background-color: rgba(0, 0,0,0.3) !important;
+}
+
+
+

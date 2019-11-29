@@ -3,6 +3,8 @@ const twitter = document.getElementById('twitter');
 const facebook = document.getElementById('facebook')
 const instagram = document.getElementById('instagram')
 const calculate = document.getElementById('calculate')
+const contactModal = document.getElementById('contactModal')
+const messageModal = document.getElementById('messageModal')
 
 twitter.addEventListener('click', twitterLink)
     function twitterLink() {
@@ -16,13 +18,18 @@ twitter.addEventListener('click', twitterLink)
 
     instagram.addEventListener('click', instagramLink)
     function instagramLink() {
-        window.open('')
+       parent.location='mailto:tech.49@yahoo.com'
     }
 
     calculate.addEventListener('click', calculateLink)
     function calculateLink() {
        location.href = 'calculator.html'
     }
+
+    //messageModal.onclick = function(){
+   // const attribute= contactModal.getAttribute('data-dismiss')
+   // attribute.value = "modal"
+   // }
 }
 
 links();
