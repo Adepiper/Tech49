@@ -4,12 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/x-icon" href="T.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/T.ico">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900|Kaushan+Script|Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Tech 49</title>
   </head>
   <body>
@@ -253,25 +253,28 @@
           </button>
         </div>
         <div class="modal-body">
-          <form action="">
+          <div class="alert text-center d-none alert-success" role="alert" id="alert">
+            We would respond to you shortly
+          </div>
+          <form id="messageForm">
             <div class="form-group">
               <label for="name">Name: </label>
-              <input type="text" class="form-control" name="" id="" >
+              <input type="text" class="form-control" name="name" id="name" >
             </div>
             <div class="form-group">
                 <label for="name">Phone: </label>
-                <input type="tel" class="form-control" name="" id="">
+                <input type="tel" class="form-control" name="phone" id="phone">
               </div>
               <div class="form-group">
                   <label for="name">Message </label>
-                  <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                  <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
-          </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Send</button>
+          <button type="submit" class="btn btn-primary">Send</button>
         </div>
+      </form>
       </div>
     </div>
   </div>
@@ -279,10 +282,13 @@
 
 
  
-
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script src="./js/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="./js/links.js"></script>
   </body>
 </html>

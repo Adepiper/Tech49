@@ -5,7 +5,7 @@ body{
 }
 
 .info{
-    background-image: url(./assets/black-and-silver-solar-panels-159397.jpg);
+    background-image: url(../assets/black-and-silver-solar-panels-159397.jpg);
     min-height: 600px;
     font-size: large;
 }
