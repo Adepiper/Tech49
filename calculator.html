@@ -4,19 +4,80 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/x-icon" href="T.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/T.ico">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
     <title>Tech 49</title>
   </head>
   <body>
-    
+    <div class="location">
+      <p>
+        please select your state
+      </p>
+      <select name="" id="sunhours">
+        <option value="" selected hidden>
+          select state
+        </option>
+      </select>
+    </div>
+    <div id="calculator">
+      <div id="audit">
+        <div id="entries">
+          <div class="header d-inline">
+            <p>Appliance</p>
+            <p>Quanntity</p>
+            <p>Power</p>
+            <p>hours</p>
+            <p>Subtotal</p>
+          </div>
+          <div class="entry" id="0-entry">
+            <select required name="" id="appliance-0" class="appliances">
+              <option value="" selected hidden>Select Appliance</option>
+            </select>
+            <input type="number" id="qty-0" class="qty" min="0" max ="999" value="0">
+            <input type="text" id="rating-0" value="0" class="watts" disabled>
+            <input type="number" id="hours-0" class="hours" min="0" max="24" step="1" value="0">
+            <input type="text" id="dailyUsage-0" class="daily" value="0" disabled>
+          </div>
+          <div class="entry" id="1-entry">
+            <select required name="" id="appliance-1" class="appliances">
+              <option value="" selected hidden>Select Appliance</option>
+            </select>
+            <input type="number" id="qty-1" class="qty" min="0" max ="999" value="0">
+            <input type="text" id="rating-1" value="0" class="watts" disabled>
+            <input type="number" id="hours-1" class="hours" min="0" max="24" step="1" value="0">
+            <input type="text" id="dailyUsage-1" class="daily" value="0" disabled>
+          </div>
+          <div class="entry" id="2-entry">
+            <select required name="" id="appliance-2" class="appliances">
+              <option value="" selected hidden>Select Appliance</option>
+            </select>
+            <input type="number" id="qty-2" class="qty" min="0" max ="999" value="0">
+            <input type="text" id="rating-2" value="0" class="watts" disabled>
+            <input type="number" id="hours-2" class="hours" min="0" max="24" step="1" value="0">
+            <input type="text" id="dailyUsage-2" class="daily" value="0" disabled>
+          </div>
+        </div>
+        <div class="addAndRest">
+          <button class="button" id="addRow">
+            Add appliances
+          </button>
+          <button type="button" class="showResult">
+            show my result
+          </button>
+          <button type="button" class="button" id="reset">Reset</button>
+        </div>
+        <div id="details"></div>
+      </div>
+    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+    <script src="./js/calculator.js"></script>
   </body>
 </html>
