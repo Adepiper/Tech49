@@ -9,12 +9,32 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900|Kaushan+Script|Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js">
     <link rel="stylesheet" href="./css/index.css">
+    
     <title>Tech 49</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-      <div class="container">
+
+    <header>
+    <div class="info">
+      <div class="overlay">
+    <div class="container-fluid">
+      <div class="smalldevices">
+        <a href="#" class="nav-bar-brand ">
+            <img src="./assets/TECH49 (2).png" class="mt-4" alt="">
+          </a>
+      </div>
+      <div class="jumbotron text-center">
+          <p m-4 id="font1">providing comfort through technology</p>
+          <button type="button" class="btn btn-primary" id="button" data-toggle="modal" data-target="#contactModal">Contact us</button>
+   </div>
+    </div>
+    </div>
+    </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light text-dark">
         <a href="#" class="nav-bar-brand">
           <img src="./assets/TECH49 (2).png" alt="">
         </a>
@@ -33,28 +53,54 @@
               <a href="#about" class="nav-link">About us</a>
             </li>
             <li class="nav-item p-2">
+                <a data-toggle="modal" data-target="#contactModal" id="modalLink" class="nav-link">Contact Us</a>
+              </li>
+            <li class="nav-item p-2">
               <a href="" class="nav-link disabled">Shop now</a>
             </li>
           </ul>
         </div>
-      </div>
     </nav>
 
-    <header class="info" id="info">
-      <div class="overlay">
-        <div class="inner">
-        <div class="container">
-           <div class="jumbotron text-center">
-                  <h1 p-2>TECH49</h1>
-                  <p m-4 id="font1">providing comfort through technology</p>
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact us</button>
-           </div>
-        </div>
-        </div>
+  <section id="about" class="text-dark display-4">
+    <div class="container">
+      <div id="ourServices" class="my-4">
+        <div id="headerCard">
+        <h3 class="display-4 text-center">
+            Why Choose us
+          </h3>
       </div>
-    </header>
+          <div class="row text-white" >
+            <div class="col-md-4">
+              <div class="card my-3">
+                <div class="card-body" id="card1">
+                         Helping you to make your switch to renewable energy stress free
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card my-3">
+                <div class="card-body text-dark" id="card2">
+                    <div class="cardoverlay">
+                        Detailed <strong>analysis and recommendations</strong> on making the most of the available energy
+                      </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card my-3">
+                      <div class="card-body" id="card3">
+                          <div class="cardoverlay">
+                               Providing <strong>High Quality</strong> electrical installations with a professional touch
+                            </div>
+                      </div>
+                    </div>
+                </div>
+          </div>
+    </div>
+  </section>
     
-    <section id="explore-products">
+    <section id="explore-products" class="bg-light text-primary">
       <div class="container">
         <div class="row">
           <div class="col text-center">
@@ -73,7 +119,7 @@
       </div>
     </section>
 
-    <section id="calculate" class="bg-light text-muted">
+    <section id="calculate" class=" text-muted">
       <div class="container">
         <div class="row">
           <div class="col text-center">
@@ -129,46 +175,6 @@
     </section>
 
 
-    <section id="about" class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h3 class="display-4">
-              Our services include
-            </h3>
-            <div class="d-flex flex-row">
-              <div class="p-2">
-                   <i class="fa fa-check-circle"></i>
-              </div>
-              <div class="p-2">
-               <p> Helping you to make your switch to renewable energy stress free.</p>
-              </div>
-            </div>
-            <div class="d-flex flex-row">
-              <div class="p-2">
-                 <i class="fa fa-check-circle"></i>
-              </div>
-              <div class="p-2">
-                
-                <p>Detailed <strong>analysis and recommendations</strong> on making the most of the available energy</p>
-              </div>
-              </div>
-              <div class="d-flex flex-row">
-              <div class="p-2">
-                 <i class="fa fa-check-circle"></i>
-              </div>
-              <div class="p-2">
-                <p> Providing <strong>High Quality</strong> electrical installations with a professional touch</p>
-              </div>
-                </div>
-          </div>
-          <div class="col-md-6 ">
-            <img src="./assets/inverter.jpg" alt="" class="img-fluid mb-2 rounded-circle">
-          </div>
-
-        </div>
-      </div>
-    </section>
     
     <footer id="footer-section" class="bg-dark">
       <div class="container">
@@ -290,5 +296,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./js/links.js"></script>
+    <script src="./js/UI.js"></script>
   </body>
 </html>
