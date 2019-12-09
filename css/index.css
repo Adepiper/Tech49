@@ -91,7 +91,7 @@ nav {
     height: 70px !important;
     align-items: center;
     justify-content: center;
-    font-weight: bolder !important;
+    font-weight: bold !important;
 } 
 #card1{
     background-image: url('https://www.cleansolar.com/wp-content/uploads/2019/09/slide3.jpg');
@@ -170,7 +170,7 @@ h4{
     }
     .display-4{
         font-size: 40px !important;
-        font-weight: bolder;
+        font-weight: bold;
     }
 }
 
