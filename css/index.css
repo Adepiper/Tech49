@@ -5,7 +5,7 @@ body{
 }
 
 .info{
-    background-image: url('https://www.gqrgm.com/wp-content/uploads/2019/02/The-Future-of-Solar-Energy-Jobs.jpg');
+    background-image: url('https://www.webelsolar.com/public/uploads/1528791313.jpg');
     height: 700px;
     font-size: large;
     background-repeat: no-repeat;
@@ -108,11 +108,12 @@ nav {
     border-radius: 7px;
 }
 #card3{
-    background-image: url('https://www.ledgerinsights.com/wp-content/uploads/2018/09/solar-energy-810x476.jpg');
+    background: url('https://www.ledgerinsights.com/wp-content/uploads/2018/09/solar-energy-810x476.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 7px;
 }
+
 .card{
     border-radius: 10px !important;
 }
@@ -129,7 +130,7 @@ nav {
 	outline: none;
 	border-radius: 100px;
     border: 3px solid transparent !important;
-	background: linear-gradient(#000, #000) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #00C9A7, #845EC2) border-box;
+    background: linear-gradient(#000, #000) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #00C9A7, #845EC2) border-box;
 }
 
 h4{

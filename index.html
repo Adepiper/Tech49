@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900|Kaushan+Script|Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="./css/index.css">
-    
+   
     <title>Tech 49</title>
   </head>
   <body>
@@ -21,13 +21,13 @@
       <div class="overlay">
     <div class="container-fluid">
       <div class="smalldevices">
-        <a href="#" class="nav-bar-brand ">
+        <a href="#" class="nav-bar-brand " id="navvv">
             <img src="./assets/TECH49 (2).png" class="mt-4" alt="">
           </a>
       </div>
       <div class="jumbotron text-center">
-          <p m-4 id="font1">providing comfort through technology</p>
-          <button type="button" class="btn btn-primary" id="button" data-toggle="modal" data-target="#contactModal">Contact us</button>
+          <p class="m-4" style="display: none;" id="font1">providing comfort through technology</p>
+          <button type="button" class="btn btn-primary" id="button" style="display: none;" data-toggle="modal" data-target="#contactModal">Contact us</button>
    </div>
     </div>
     </div>
@@ -82,18 +82,16 @@
             <div class="col-md-4">
               <div class="card my-3 m-4">
                 <div class="card-body text-dark" id="card2">
-                    <div class="cardoverlay">
                         Detailed <strong>analysis and recommendations</strong> on making the most of the available energy
-                      </div>
                 </div>
               </div>
               </div>
               <div class="col-md-4">
                   <div class="card m-4">
                       <div class="card-body" id="card3">
-                          <div class="cardoverlay">
+                        
                                Providing <strong>High Quality</strong> electrical installations with a professional touch
-                            </div>
+                          
                       </div>
                     </div>
                 </div>
@@ -293,7 +291,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
     <script src="./js/firebase.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./js/links.js"></script>
