@@ -114,8 +114,9 @@ nav {
     border-radius: 7px;
 }
 
+
 .card{
-    border-radius: 10px !important;
+    border-radius: 7px !important;
 }
 
 #button{
@@ -173,6 +174,18 @@ h4{
         font-size: 40px !important;
         font-weight: bold;
     }
+    #card1 p{
+        margin-top: 25%;
+    }
+    
+    #card2 p{
+        margin-top: 25%;
+    }
+    
+    #card3 p{
+        margin-top: 25%;
+    }
+    
 }
 
 
