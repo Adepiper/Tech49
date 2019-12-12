@@ -29,15 +29,27 @@ let count = 3,
 const createNewRow = () =>{
     count++
 
-    let newRow = `<div class="entry" id="entry-${count}">
-    <select required name="" id="appliance-${count}" class="appliances">
-      <option value="" selected hidden>Select Appliance</option>
-    </select>
-    <input type="number" id="qty-${count}" class="qty" min="0" max ="999" value="0">
-    <input type="text" id="rating-${count}" value="0" class="watts" disabled>
-    <input type="number" id="hours-${count}" class="hours" min="0" max="24" step="1" value="0">
-    <input type="text" id="dailyUsage-${count}" class="daily" value="0" disabled>
-  </div>`
+  let newRow = ` <div class="entry" id="${count}-entry">
+  <div class="row">
+    <div class="col-lg-4 form-group">
+        <select required name="" id="appliance-${count}" class="appliances form-control">
+            <option value="" selected hidden>Select Appliance</option>
+          </select>
+    </div>
+    <div class="col-lg-2 form-group">
+        <input type="number" id="qty-${count}" class="qty form-control" min="0" max ="999" placeholder="Quantity">
+    </div>
+    <div class="col-lg-2 form-group">
+        <input type="text" id="rating-${count}"  class="watts form-control" placeholder="Power Rating" disabled>
+    </div>
+    <div class="col-lg-2 form-group">
+        <input type="number" id="hours-${count}" class="hours form-control" min="0" max="24" step="1" placeholder="Number of Hours" >
+    </div>
+    <div class="col-lg-2 form-group">
+        <input type="text" id="dailyUsage-${count}" class="daily form-control" placeholder="Daily Usage" disabled>
+    </div>
+    </div>
+</div> ` 
 
   $('#entries').append(newRow);
   addList(ratings, $('.appliances'))
@@ -153,27 +165,24 @@ document.querySelectorAll('.showResult').forEach( (e) => {
         details = `Your daily energy need is <strong>${total}</strong> wattshr. The average sun-hours in <b>${residence}</b> is <b>${sunIntensity}</b>hours. Hence, you will need <b>${solarPanels}</b> solar panel(s) to provide an average of <b>${energyPerHour}</b> watts per sun-hour. Armed with this information, we would like to recommend our <b>${product}</b>.`;
 
         $('#details').html(details)
-        console.log(details)
+        $('#details').css({
+            'width': '400px',
+            'min-height': '120px',
+            'border': '1px solid black',
+            'border-radius': '10px',
+            'margin': '10% auto',
+            'line-height': '1.6em',
+            'padding': '10px'
+        })
     })
 
 })
 
 
 $('#reset').on('click', function(){
-    $('input').val('0');
+    $('input').val('')
     $('#details').html('');
-    $('#appliance-0').val($('#appliance-0').prop('selected'));
     $('select').val('')
 
-    const entries = document.querySelectorAll('.entry')
-    entries.forEach((entry) => {
-        if((entry.getAttribute('id') === 'entry-0')
-            || (entry.getAttribute('id') === 'entry-1')
-            || (entry.getAttribute('id') === 'entry-2')
-        ){
-            entry.style.display ='flex'
-        } else {
-            entry.style.display ='none'
-        }
-    })
+    document.location.reload()
 })

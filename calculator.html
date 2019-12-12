@@ -8,19 +8,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/calculator.css">
     <title>Tech 49</title>
   </head>
   <body>
     <div class="container-fluid">
         <div class="smalldevices">
-            <a href="#" class="nav-bar-brand " id="navvv">
+            <a href="index.html" class="nav-bar-brand " id="navvv">
                 <img src="./assets/TECH49 (2).png" class="my-4" alt="">
               </a>
           </div>
           <div class="container">
-       <!-- <div class="location">
+        <div class="location mb-4">
             <p>
-              please select your state
+              Please select your state
             </p>
             <select name="" id="sunhours">
               <option value="" selected hidden>
@@ -31,68 +32,7 @@
           <div id="calculator">
             <div id="audit">
               <div id="entries">
-                <div class="header d-inline">
-                  <p>Appliance</p>
-                  <p>Quanntity</p>
-                  <p>Power</p>
-                  <p>hours</p>
-                  <p>Subtotal</p>
-                </div>
-                <div class="entry" id="0-entry">
-                  <select required name="" id="appliance-0" class="appliances">
-                    <option value="" selected hidden>Select Appliance</option>
-                  </select>
-                  <input type="number" id="qty-0" class="qty" min="0" max ="999" value="0">
-                  <input type="text" id="rating-0" value="0" class="watts" disabled>
-                  <input type="number" id="hours-0" class="hours" min="0" max="24" step="1" value="0">
-                  
-                </div>
-                <div class="entry" id="1-entry">
-                  <select required name="" id="appliance-1" class="appliances">
-                    <option value="" selected hidden>Select Appliance</option>
-                  </select>
-                  <input type="number" id="qty-1" class="qty" min="0" max ="999" value="0">
-                  <input type="text" id="rating-1" value="0" class="watts" disabled>
-                  <input type="number" id="hours-1" class="hours" min="0" max="24" step="1" value="0">
-                  <input type="text" id="dailyUsage-1" class="daily" value="0" disabled>
-                </div>
-                <div class="entry" id="2-entry">
-                  <select required name="" id="appliance-2" class="appliances">
-                    <option value="" selected hidden>Select Appliance</option>
-                  </select>
-                  <input type="number" id="qty-2" class="qty" min="0" max ="999" value="0">
-                  <input type="text" id="rating-2" value="0" class="watts" disabled>
-                  <input type="number" id="hours-2" class="hours" min="0" max="24" step="1" value="0">
-                  <input type="text" id="dailyUsage-2" class="daily" value="0" disabled>
-                </div>
-              </div>
-              <div class="addAndRest">
-                <button class="button" id="addRow">
-                  Add appliances
-                </button>
-                <button type="button" class="showResult">
-                  show my result
-                </button>
-                <button type="button" class="button" id="reset">Reset</button>
-              </div>
-              <div id="details"></div>
-            </div>
-          </div>
-        -->
-        <div class="location">
-            <p>
-              please select your state
-            </p>
-            <select name="" id="sunhours">
-              <option value="" selected hidden>
-                select state
-              </option>
-            </select>
-          </div>
-          <div id="calculator">
-            <div id="audit">
-              <div id="entries">
-                <div class="entry" id="0-entry">
+                <div class="entry my-3" id="0-entry">
                   <div class="row">
                     <div class="col-lg-4 form-group">
                         <select required name="" id="appliance-0" class="appliances form-control">
@@ -100,20 +40,20 @@
                           </select>
                     </div>
                     <div class="col-lg-2 form-group">
-                        <input type="number" id="qty-0" class="qty form-control" min="0" max ="999" placeholder="quantity">
+                        <input type="number" id="qty-0" class="qty form-control" min="0" max ="999" placeholder="Quantity">
                     </div>
                     <div class="col-lg-2 form-group">
-                        <input type="text" id="rating-0"  class="watts form-control" placeholder="Power rating" disabled>
+                        <input type="text" id="rating-0"  class="watts form-control" placeholder="Power Rating" disabled>
                     </div>
                     <div class="col-lg-2 form-group">
-                        <input type="number" id="hours-0" class="hours form-control" min="0" max="24" step="1" placeholder="Number of hours" >
+                        <input type="number" id="hours-0" class="hours form-control" min="0" max="24" step="1" placeholder="Number of Hours" >
                     </div>
                     <div class="col-lg-2 form-group">
                         <input type="text" id="dailyUsage-0" class="daily form-control" placeholder="Daily Usage" disabled>
                     </div>
                     </div>
                 </div>
-                <div class="entry" id="1-entry">
+                <div class="entry my-3" id="1-entry">
                   <div class="row">
                     <div class="col-lg-4 form-group">
                         <select required name="" id="appliance-1" class="appliances form-control">
@@ -124,17 +64,17 @@
                         <input type="number" id="qty-1" class="qty form-control" min="0" max ="999" placeholder="Quantity">
                     </div>
                     <div class="col-lg-2 form-group">
-                        <input type="text" id="rating-1" class="watts form-control" placeholder="Power rating" disabled>
+                        <input type="text" id="rating-1" class="watts form-control" placeholder="Power Rating" disabled>
                     </div>
                     <div class="col-lg-2 form-group">
-                        <input type="number" id="hours-1" class="hours form-control" min="0" max="24" step="1" placeholder="Number of hours">
+                        <input type="number" id="hours-1" class="hours form-control" min="0" max="24" step="1" placeholder="Number of Hours">
                     </div>
                     <div class="col-lg-2 form-group">
                         <input type="text" id="dailyUsage-1" class="daily form-control" placeholder="Daily Usage" disabled>
                     </div>
                   </div>
                 </div>
-                <div class="entry" id="2-entry">
+                <div class="entry my-3" id="2-entry">
                      <div class="row">
                     <div class="col-lg-4 form-group">
                         <select required name="" id="appliance-2" class="appliances form-control">
@@ -145,13 +85,13 @@
                         <input type="number" id="qty-2" class="qty form-control" min="0" max ="999" placeholder="Quantity">
                     </div>
                     <div class="col-lg-2 form-group">
-                        <input type="text" id="rating-2" placeholder="power rating" class="watts form-control" disabled>
+                        <input type="text" id="rating-2" placeholder="Power Rating" class="watts form-control" disabled>
                     </div>
                     <div class="col-lg-2 form-group">
-                        <input type="number" id="hours-2" class="hours form-control" min="0" max="24" step="1" placeholder="number of hours">
+                        <input type="number" id="hours-2" class="hours form-control" min="0" max="24" step="1" placeholder="Number of Hours">
                     </div>
                     <div class="col-lg-2 form-group">
-                        <input type="text" id="dailyUsage-2" class="daily form-control" placeholder="daily-usage" disabled>
+                        <input type="text" id="dailyUsage-2" class="daily form-control" placeholder="Daily Usage" disabled>
                     </div>
                   </div>
                 </div>
@@ -159,23 +99,25 @@
               
               <div class="addAndRest">
               <div class="row">
-                <div class="col-3">
-                    <button class="button" id="addRow">
-                        Add appliances
+                <div class="col-4">
+                    <button class="btn btn-primary" type="button" id="addRow">
+                       +Add appliances
                       </button>
                 </div>
-                <div class="col-3">
-                    <button type="button" class="showResult">
-                        show my result
+                <div class="col-4">
+                    <button type="button" class="showResult btn btn-success">
+                        Check Result
                       </button>
                 </div>
-                <div class="col-3">
-                    <button type="button" class="button" id="reset">Reset</button>
+                <div class="col-4">
+                    <button type="button" class="button btn btn-secondary" id="reset">Reset</button>
                 </div>
               </div>
               </div>
               </div>
-              <div id="details"></div>
+              <div id="details" class="my-4">
+
+              </div>
             </div>
           </div>
           </div>
