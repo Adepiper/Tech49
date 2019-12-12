@@ -2,7 +2,7 @@ const links = () => {
 const twitter = document.getElementById('twitter');
 const facebook = document.getElementById('facebook')
 const instagram = document.getElementById('instagram')
-const calculate = document.getElementById('calculate')
+const calculate = document.getElementById('calculator')
 const contactModal = document.getElementById('contactModal')
 const messageModal = document.getElementById('messageModal')
 
@@ -21,6 +21,10 @@ twitter.addEventListener('click', twitterLink)
        window.open('https://www.instagram.com/tech_049/')
     }
 
+    calculate.addEventListener('click', calculateLink)
+    function calculateLink(){
+        window.open('calculator.html')
+    }
     
 
     //messageModal.onclick = function(){
