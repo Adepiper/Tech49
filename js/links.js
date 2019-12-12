@@ -21,10 +21,7 @@ twitter.addEventListener('click', twitterLink)
        window.open('https://www.instagram.com/tech_049/')
     }
 
-    calculate.addEventListener('click', calculateLink)
-    function calculateLink() {
-       location.href = 'calculator.html'
-    }
+    
 
     //messageModal.onclick = function(){
    // const attribute= contactModal.getAttribute('data-dismiss')
