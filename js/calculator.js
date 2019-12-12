@@ -18,7 +18,7 @@ let count = 3,
         "Ceiling Fan":75
     },
     states = {
-        Abia :5,"Adamawa": 9,"Akwa Ibom": 5,"Anambra": 5.5,"Bauchi": 8.5,"Bayelsa": 5.5,"Benue": 7.5,"Borno": 11,"Cross River": 5,"Delta": 4.5,
+        "Abia" :5, "Adamawa": 9,"Akwa Ibom": 5,"Anambra": 5.5,"Bauchi": 8.5,"Bayelsa": 5.5,"Benue": 7.5,"Borno": 11,"Cross River": 5,"Delta": 4.5,
         "Ebonyi": 5.5, "Enugu": 5, "Edo": 6, "Ekiti": 5.5, "Gombe": 9.5, "Imo": 6, "Jigawa": 9.5, "Kaduna": 10.5, "Kano": 10.5, "Katsina": 11,
         "Kebbi": 11,"Kogi": 7.5, "Kwara": 6.5, "Lagos": 6, "Nasarawa": 8.5, "Niger": 9, "Ogun": 5.5, "Ondo": 5, "Osun": 5, "Oyo": 5.5, "Plateau": 9,
         "Rivers": 6, "Sokoto": 10.5, "Taraba": 10, "Yobe": 9.5, Zamfara: 10.5, "Abuja": 8 
