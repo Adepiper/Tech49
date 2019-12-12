@@ -133,29 +133,29 @@ document.querySelectorAll('.showResult').forEach( (e) => {
         if (residence !== undefined){
         $(".appliances").each(function(index, value){
             obj[index] = {}
-            obj[index].appliances = $(this).val()
+            obj[index].appliances = $(this).value
           
            
         })
         $(".qty").each(function(index, value){
             
-            obj[index].quantity = $(this).val()
+            obj[index].quantity = $(this).value
             
         })
         $(".watts").each(function(index, value){
            
-            obj[index].rating = $(this).val()
+            obj[index].rating = $(this).value
             
         })
         $(".hours").each(function(index, value){
            
-            obj[index].hours = $(this).val()
+            obj[index].hours = $(this).value
            
         })
         $('.daily').each(function(index, value){
-            obj[index].energyConsuption = $(this).val()
+            obj[index].energyConsuption = $(this).value
             
-            total += +$(this).val() * 1.25;
+            total += +$(this).value * 1.25;
             energyPerHour = (total/sunIntensity).toFixed(2)
             solarPanels = Math.ceil(energyPerHour / 320)
             console.log(total)
