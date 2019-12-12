@@ -153,9 +153,9 @@ document.querySelectorAll('.showResult').forEach( (e) => {
            
         })
         $('.daily').each(function(index, value){
-            obj[index].energyConsuption = $(this).value
+            obj[index].energyConsuption = $(this).val()
             
-            total += +$(this).value * 1.25;
+            total += +$(this).val() * 1.25;
             energyPerHour = (total/sunIntensity).toFixed(2)
             solarPanels = Math.ceil(energyPerHour / 320)
             console.log(total)
