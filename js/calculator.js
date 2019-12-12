@@ -130,7 +130,7 @@ const recommendProduct = (energyPerHour) => {
 
 document.querySelectorAll('.showResult').forEach( (e) => {
     e.addEventListener('click', function(){
-        
+        if (residence !== undefined){
         $(".appliances").each(function(index, value){
             obj[index] = {}
             obj[index].appliances = $(this).val()
@@ -162,11 +162,17 @@ document.querySelectorAll('.showResult').forEach( (e) => {
         })
 
         product = recommendProduct(energyPerHour)
-        details = `Your daily energy need is <strong>${total}</strong> wattshr. The average sun-hours in <b>${residence}</b> is <b>${sunIntensity}</b>hours. Hence, you will need <b>${solarPanels}</b> solar panel(s) to provide an average of <b>${energyPerHour}</b> watts per sun-hour. Armed with this information, we would like to recommend our <b>${product}</b>.`;
+        details = `Your daily energy need is <strong>${total}</strong> WattsHr. The average sun-hours in <b>${residence}</b> 
+        is <b>${sunIntensity}</b>hours. Hence, you will need <b>${solarPanels}</b> 
+        solar panel(s) to provide an average of <b>${energyPerHour}</b> 
+        watts per sun-hour. Armed with this information, 
+        we would like to recommend our <b>${product}</b>.
+        <button href="" class="btn btn-primary" disabled>Shop now
+              </button>`;
 
         $('#details').html(details)
         $('#details').css({
-            'width': '400px',
+            'width': '300px',
             'min-height': '120px',
             'border': '1px solid black',
             'border-radius': '10px',
@@ -174,8 +180,12 @@ document.querySelectorAll('.showResult').forEach( (e) => {
             'line-height': '1.6em',
             'padding': '10px'
         })
-    })
-
+        report = true
+    }
+   else {
+    $('#guide').html('<p>please enter your state of residence</p>')
+   }
+})
 })
 
 
