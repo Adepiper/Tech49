@@ -183,8 +183,13 @@ document.querySelectorAll('.showResult').forEach( (e) => {
             'line-height': '1.6em',
             'padding': '10px'
         })
+        $('.showResult').attr('disabled', 'disabled')
+        $('#addRow').attr('disabled', 'disabled')
+
         report = true
-    }
+
+        }
+        
    else {
     $('#guide').html('<p>please enter your state of residence</p>')
    }
