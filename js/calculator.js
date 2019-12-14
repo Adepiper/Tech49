@@ -29,7 +29,7 @@ let count = 3,
 const createNewRow = () =>{
     count++
 
-  let newRow = ` <div class="entry" id="${count}-entry">
+  let newRow = ` <div class="entry my-3" id="${count}-entry">
   <div class="row">
     <div class="col-lg-4 form-group">
         <select required name="" id="appliance-${count}" class="appliances form-control">
