@@ -1,6 +1,5 @@
 $(document).ready(function(){
-
-       let imageUrl = 'https://www.webelsolar.com/public/uploads/1528791313.jpg'
+       
        let card1Image ='https://www.cleansolar.com/wp-content/uploads/2019/09/slide3.jpg'
        let card2Image ='http://greenmileenergy.net/wp-content/uploads/2019/05/POWER-YOUR-HOME-WITH-SOLAR-POWER-PRODUCTS-nxenhm4vd852lyvsmro1l4wqh04wyu79vqfuhpvatw.jpg'
        let card3Image ='https://www.ledgerinsights.com/wp-content/uploads/2018/09/solar-energy-810x476.jpg'

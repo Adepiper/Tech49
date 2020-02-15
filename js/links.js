@@ -13,12 +13,12 @@ twitter.addEventListener('click', twitterLink)
 
     facebook.addEventListener('click', facebookLink)
     function facebookLink() {
-        window.open('https://www.facebook.com/tech049')
+        window.open('https://www.facebook.com/tech49energy/')
     }
 
     instagram.addEventListener('click', instagramLink)
     function instagramLink() {
-       window.open('https://www.instagram.com/tech_049/')
+       window.open('https://www.instagram.com/_tech49energy/')
     }
 
     calculate.addEventListener('click', calculateLink)

@@ -1,5 +1,5 @@
 body{
-    background-color: lightgray;
+    background: url('https://images.pexels.com/photos/733174/pexels-photo-733174.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1920&w=1279');
     color: white;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -19,6 +19,7 @@ body{
 
 nav {
     border-bottom: #D80B0B 3px solid !important;
+    opacity: 0.8;
 }
 .nav a{
     text-decoration: none;
@@ -80,11 +81,22 @@ nav {
 #modalContent{
     background-color: rgba(0, 0,0,0.3) !important;
 }
-.card {
+#card {
     height: 300px !important;
     box-shadow: 20px 20px rgba(0,0,0,0.3);
     align-items: center;
     justify-content: center;
+    opacity: 0.7;
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+    border-radius: 7px !important;
+}
+
+#youKnow{
+    opacity: 0.8;
+    font-weight: bolder;
+    line-height: 30px;
+    
 }
 
 #headerCard{
@@ -94,6 +106,7 @@ nav {
     font-weight: bold !important;
 } 
 #card1{
+    display: flex;
     background-image: url('https://www.cleansolar.com/wp-content/uploads/2019/09/slide3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,21 +115,31 @@ nav {
     border-radius: 7px;
 }
 #card2{
+    display: flex;
     background-image: url('http://greenmileenergy.net/wp-content/uploads/2019/05/POWER-YOUR-HOME-WITH-SOLAR-POWER-PRODUCTS-nxenhm4vd852lyvsmro1l4wqh04wyu79vqfuhpvatw.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 7px;
+    justify-content: center;
+    align-items: center;
 }
 #card3{
+    display: flex;
     background: url('https://www.ledgerinsights.com/wp-content/uploads/2018/09/solar-energy-810x476.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 7px;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.card{
-    border-radius: 7px !important;
+#explore-products {
+    opacity: 0.6;
+}
+
+#footer-section {
+    opacity: 0.9;
 }
 
 #button{
@@ -139,6 +162,23 @@ h4{
 }
  .info h2{
      font-weight: bolder;
+ }
+
+ #contact{
+     opacity: 0.6;
+ }
+
+ #messageBox{
+     background-color: rgba(0, 0,0,0.9);
+     color: white;
+     border-radius: 10px;
+     box-shadow: 20px 20px rgba(0,0,0,0.3);
+ }
+
+ #contact-Box{
+    background-color: rgba(0, 0,0,0.9);
+    border-radius: 10px;
+    box-shadow: 20px 20px rgba(0,0,0,0.3)
  }
 
 
@@ -173,17 +213,6 @@ h4{
     .display-4{
         font-size: 40px !important;
         font-weight: bold;
-    }
-    #card1 p{
-        margin-top: 25%;
-    }
-    
-    #card2 p{
-        margin-top: 25%;
-    }
-    
-    #card3 p{
-        margin-top: 25%;
     }
     
 }
