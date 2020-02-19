@@ -217,7 +217,11 @@ h4{
         font-size: 40px !important;
         font-weight: bold;
     }
-    
+    body{
+        background: url('../assets/aerial-photo-of-mountain-surrounded-by-fog-733174\ \(3\).jpg');
+        color: white;
+        font-family: 'Noto Sans', sans-serif;
+    }
 }
 
 
