@@ -1,5 +1,6 @@
 body{
-    background: url('https://images.pexels.com/photos/733174/pexels-photo-733174.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1920&w=1279');
+   /* background: url('https://images.pexels.com/photos/733174/pexels-photo-733174.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1920&w=1279');*/
+   background: url('../assets/photo-of-people-on-rowboat-during-sunset-1435075.jpg');
     color: white;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -141,7 +142,7 @@ nav {
 
 
 #explore-products {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 #footer-section {
@@ -171,7 +172,7 @@ h4{
  }
 
  #contact{
-     opacity: 0.6;
+     opacity: 0.7;
  }
 
  #messageBox{
@@ -210,18 +211,14 @@ h4{
         width: 150px;
     }
 
-    .nav-bar-brand{
+    .navbar-brand{
         justify-content: center !important;
     }
     .display-4{
         font-size: 40px !important;
         font-weight: bold;
     }
-    body{
-        background: url('../assets/aerial-photo-of-mountain-surrounded-by-fog-733174\ \(3\).jpg');
-        color: white;
-        font-family: 'Noto Sans', sans-serif;
-    }
+
 }
 
 
